@@ -34,14 +34,14 @@ console.log(crystalFourValue)
 //Setting functions
 
 function reset() {
-    var targetNumber = Math.floor(Math.random() * 100) + 1;
+    targetNumber = Math.floor(Math.random() * 100) + 1;
     $('#random-number').text(targetNumber);
-    // var startingNumber = 0;
+    startingNumber = 0;
     $('#playernumber').text(startingNumber);
-    var crystalOneValue = Math.floor(Math.random() * 5) + 1;
-    var crystalTwoValue = Math.floor(Math.random() * 10) + 1;
-    var crystalThreeValue = Math.floor(Math.random() * 15) + 1;
-    var crystalFourValue = Math.floor(Math.random() * 20) + 1;
+    crystalOneValue = Math.floor(Math.random() * 5) + 1;
+    crystalTwoValue = Math.floor(Math.random() * 10) + 1;
+    crystalThreeValue = Math.floor(Math.random() * 15) + 1;
+    crystalFourValue = Math.floor(Math.random() * 20) + 1;
 }
 
 function loss() {
@@ -81,5 +81,72 @@ $("#crystal1").on('click', function() {
 
         loss();
     }
+
+
+});
+
+$("#crystal2").on('click', function() {
+
+
+    startingNumber = crystalTwoValue + startingNumber;
+    console.log(startingNumber)
+    $('#playernumber').text(startingNumber);
+
+    // Win/Lose Conditions
+
+    if (startingNumber == targetNumber) {
+
+        win();
+
+    }
+    if (startingNumber > targetNumber) {
+
+        loss();
+    }
+
+
+});
+
+$("#crystal3").on('click', function() {
+
+
+    startingNumber = crystalThreeValue + startingNumber;
+    console.log(startingNumber)
+    $('#playernumber').text(startingNumber);
+
+    // Win/Lose Conditions
+
+    if (startingNumber == targetNumber) {
+
+        win();
+
+    }
+    if (startingNumber > targetNumber) {
+
+        loss();
+    }
+
+
+});
+
+$("#crystal4").on('click', function() {
+
+
+    startingNumber = crystalFourValue + startingNumber;
+    console.log(startingNumber)
+    $('#playernumber').text(startingNumber);
+
+    // Win/Lose Conditions
+
+    if (startingNumber == targetNumber) {
+
+        win();
+
+    }
+    if (startingNumber > targetNumber) {
+
+        loss();
+    }
+
 
 });
