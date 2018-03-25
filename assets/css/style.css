@@ -1,52 +1,107 @@
-#container {
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+body {
+    background: hsla(0, 0%, 0%, .9);
+}
+
+h1 {
+    color: hsla(0, 0%, 0%, .9);
+    font: normal 140px Varela Round, sans-serif;
+    height: 140px;
+    left: 0;
+    margin: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    top: 50%;
     width: 100%;
-    height: 100%;
+    animation: move linear 2000ms infinite;
+}
+
+@keyframes move {
+    0% {
+        text-shadow: 4px -4px 0 hsla(0, 100%, 50%, 1), 3px -3px 0 hsla(0, 100%, 50%, 1), 2px -2px 0 hsla(0, 100%, 50%, 1), 1px -1px 0 hsla(0, 100%, 50%, 1), -4px 4px 0 hsla(180, 100%, 50%, 1), -3px 3px 0 hsla(180, 100%, 50%, 1), -2px 2px 0 hsla(180, 100%, 50%, 1), -1px 1px 0 hsla(180, 100%, 50%, 1);
+    }
+    25% {
+        text-shadow: -4px -4px 0 hsla(180, 100%, 50%, 1), -3px -3px 0 hsla(180, 100%, 50%, 1), -2px -2px 0 hsla(180, 100%, 50%, 1), -1px -1px 0 hsla(180, 100%, 50%, 1), 4px 4px 0 hsla(0, 100%, 50%, 1), 3px 3px 0 hsla(0, 100%, 50%, 1), 2px 2px 0 hsla(0, 100%, 50%, 1), 1px 1px 0 hsla(0, 100%, 50%, 1);
+    }
+    50% {
+        text-shadow: -4px 4px 0 hsla(0, 100%, 50%, 1), -3px 3px 0 hsla(0, 100%, 50%, 1), -2px 2px 0 hsla(0, 100%, 50%, 1), -1px 1px 0 hsla(0, 100%, 50%, 1), 4px -4px 0 hsla(180, 100%, 50%, 1), 3px -3px 0 hsla(180, 100%, 50%, 1), 2px -2px 0 hsla(180, 100%, 50%, 1), 1px -1px 0 hsla(180, 100%, 50%, 1);
+    }
+    75% {
+        text-shadow: 4px 4px 0 hsla(180, 100%, 50%, 1), 3px 3px 0 hsla(180, 100%, 50%, 1), 2px 2px 0 hsla(180, 100%, 50%, 1), 1px 1px 0 hsla(180, 100%, 50%, 1), -4px -4px 0 hsla(0, 100%, 50%, 1), -3px -3px 0 hsla(0, 100%, 50%, 1), -2px -2px 0 hsla(0, 100%, 50%, 1), -1px -1px 0 hsla(0, 100%, 50%, 1);
+    }
+    100% {
+        text-shadow: 4px -4px 0 hsla(0, 100%, 50%, 1), 3px -3px 0 hsla(0, 100%, 50%, 1), 2px -2px 0 hsla(0, 100%, 50%, 1), 1px -1px 0 hsla(0, 100%, 50%, 1), -4px 4px 0 hsla(180, 100%, 50%, 1), -3px 3px 0 hsla(180, 100%, 50%, 1), -2px 2px 0 hsla(180, 100%, 50%, 1), -1px 1px 0 hsla(180, 100%, 50%, 1);
+    }
+}
+
+#container {
+    /* width: 100%; */
+    /* height: 100%; */
+    background-color: royalblue;
 }
 
 header {
     text-align: center;
-    width: 600px;
+    /* width: 600px; */
     border: solid black 1px;
-    color: blue;
+    color: darkgray;
+    background-color: slateblue;
 }
 
 p {
-    color: red;
+    color: #dddddd;
 }
 
 #instructions {
-    width: 600px;
+    /* width: 600px; */
     border: solid 1px black;
     text-align: center;
+    background-color: skyblue;
 }
 
 #dtarg {
     width: 150px;
-    height: 100px;
+    /* height: 100px; */
+    text-align: center;
+    margin-left: 680px;
 }
 
 #dwins {
     width: 150px;
-    height: 100px;
+    /* height: 100px; */
     float: right;
     position: relative;
-    bottom: 100px;
-    right: 1520px;
+    bottom: 92px;
+    right: 850px;
+    text-align: center
 }
 
 #dloss {
     width: 150px;
-    height: 100px;
+    /* height: 100px; */
     float: right;
     position: relative;
-    bottom: 100px;
-    right: 1100px;
+    bottom: 92px;
+    right: 560px;
+    text-align: center;
 }
 
 ul {
     list-style: none;
+    margin-top: 10px;
+    margin-left: 600px;
 }
 
 li {
     display: inline;
+}
+
+.counter {
+    width: 1140px;
+}
+
+#player {
+    /* width: 600px; */
+    text-align: center;
+    padding-bottom: 30px;
 }
