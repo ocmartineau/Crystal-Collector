@@ -1,13 +1,13 @@
 //Variables
 
-var targetNumber = Math.floor(Math.random() * 100) + 1;
+var targetNumber = Math.floor(Math.random() * 101) + 19;
 var startingNumber = 0;
 var playerWins = 0;
 var playerLosses = 0;
-var crystalOneValue = Math.floor(Math.random() * 5) + 1;
-var crystalTwoValue = Math.floor(Math.random() * 10) + 1;
-var crystalThreeValue = Math.floor(Math.random() * 15) + 1;
-var crystalFourValue = Math.floor(Math.random() * 20) + 1;
+var crystalOneValue = Math.floor(Math.random() * 11) + 1;
+var crystalTwoValue = Math.floor(Math.random() * 11) + 1;
+var crystalThreeValue = Math.floor(Math.random() * 11) + 1;
+var crystalFourValue = Math.floor(Math.random() * 11) + 1;
 
 //Setting the Board
 
@@ -22,11 +22,6 @@ console.log(crystalOneValue)
 console.log(crystalTwoValue)
 console.log(crystalThreeValue)
 console.log(crystalFourValue)
-    // console.log(crystalFourValue + crystalOneValue)
-
-
-
-
 
 
 
@@ -34,14 +29,14 @@ console.log(crystalFourValue)
 //Setting functions
 
 function reset() {
-    targetNumber = Math.floor(Math.random() * 100) + 1;
+    targetNumber = Math.floor(Math.random() * 101) + 19;
     $('#random-number').text(targetNumber);
     startingNumber = 0;
     $('#playernumber').text(startingNumber);
-    crystalOneValue = Math.floor(Math.random() * 5) + 1;
-    crystalTwoValue = Math.floor(Math.random() * 10) + 1;
-    crystalThreeValue = Math.floor(Math.random() * 15) + 1;
-    crystalFourValue = Math.floor(Math.random() * 20) + 1;
+    crystalOneValue = Math.floor(Math.random() * 11) + 1;
+    crystalTwoValue = Math.floor(Math.random() * 11) + 1;
+    crystalThreeValue = Math.floor(Math.random() * 11) + 1;
+    crystalFourValue = Math.floor(Math.random() * 11) + 1;
 }
 
 function loss() {

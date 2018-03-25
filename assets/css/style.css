@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
 body {
-    background: hsla(0, 0%, 0%, .9);
+    background: rgba(23, 39, 128, 0.9);
 }
 
 h1 {
@@ -38,45 +38,53 @@ h1 {
     /* width: 100%; */
     /* height: 100%; */
     background-color: royalblue;
+    border: solid 1px plum;
 }
 
 header {
     text-align: center;
     /* width: 600px; */
-    border: solid black 1px;
+    border: solid 1px plum;
     color: darkgray;
     background-color: slateblue;
 }
 
 p {
-    color: #dddddd;
+    color: purple;
+    font-family: 'Delius Swash Caps', cursive;
+    font-weight: bold;
 }
 
 #instructions {
     /* width: 600px; */
-    border: solid 1px black;
+    border: solid 1px plum;
     text-align: center;
     background-color: skyblue;
 }
 
 #dtarg {
+    color: plum;
     width: 150px;
     /* height: 100px; */
     text-align: center;
     margin-left: 680px;
+    font-family: 'Delius Swash Caps', cursive;
 }
 
 #dwins {
+    color: plum;
     width: 150px;
     /* height: 100px; */
     float: right;
     position: relative;
     bottom: 92px;
     right: 850px;
-    text-align: center
+    text-align: center;
+    font-family: 'Delius Swash Caps', cursive;
 }
 
 #dloss {
+    color: plum;
     width: 150px;
     /* height: 100px; */
     float: right;
@@ -84,6 +92,7 @@ p {
     bottom: 92px;
     right: 560px;
     text-align: center;
+    font-family: 'Delius Swash Caps', cursive;
 }
 
 ul {
@@ -101,7 +110,15 @@ li {
 }
 
 #player {
+    color: plum;
     /* width: 600px; */
     text-align: center;
+    font-family: 'Delius Swash Caps', cursive;
     padding-bottom: 30px;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Delius Swash Caps', cursive;
+    margin-top: 500px;
 }
