@@ -1,0 +1,52 @@
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    text-align: center;
+    width: 600px;
+    border: solid black 1px;
+    color: blue;
+}
+
+p {
+    color: red;
+}
+
+#instructions {
+    width: 600px;
+    border: solid 1px black;
+    text-align: center;
+}
+
+#dtarg {
+    width: 150px;
+    height: 100px;
+}
+
+#dwins {
+    width: 150px;
+    height: 100px;
+    float: right;
+    position: relative;
+    bottom: 100px;
+    right: 1520px;
+}
+
+#dloss {
+    width: 150px;
+    height: 100px;
+    float: right;
+    position: relative;
+    bottom: 100px;
+    right: 1100px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+}
